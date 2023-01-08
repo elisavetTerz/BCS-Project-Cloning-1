@@ -1,14 +1,233 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Cloning Project 1</title>
-    </head>
-    <body>
-        <section>kjgfkhdgfjhsdgshgfjkhsf</section>
-        <h1>Best Location</h1>
-        <h1>Gallery</h1>
-        <h1>Gallery</h1>
-        <h1>Gallery</h1>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ET">
+    <meta name="keywords" content="fullstack developer, web and mobile application">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <title>Cloning Project 1</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Header section with image background and Title, Subtitle and Call to action element on top of it -->
+    <header id="header" class="navbar-header">
+        <!-- navbar -->
+        <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <p class="page-title">Sunglasses Store</p>
+            </a>
+            <button id="nav-button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul id="page-items" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="#location">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#collection">Collection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#our-team">Our Team</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- <nav id="navbar" class="navbar navbar-default navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div id="page-title">
+                    <a class="navbar-brand" href="#index.html">
+                        <p class="title">Sunglasses Store</p>
+                    </a>
+                </div>
+                <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul id="page-items" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#collection">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-team">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+
+
+
+
+        <!-- background image -->
+        <section class="background-image">
+            <h1 id="title-background-img">Sunglasses: Unique designs for everyone</h1>
+            <p id="text-background-img">Always in fashion!</p>
+            <button id="button-background-img"><a href="#collection" class="button-text">Discover our
+                    collection</a></button>
+            <!-- <img src="images/documerica-FIA9Nz0y3qo-unsplash.jpg" alt="background-image"> -->
+        </section>
+    </header>
+
+
+
+    <!-- main page -->
+    <main id="main-content" class="container">
+        <!-- Location -->
+        <section id="location">
+            <h2 class="title">Location</h2>
+            <div class="top"><a href="#navbar">Top</a></div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.65560449158!2d2.0701487644530046!3d41.39264671453728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa%20Sagrada%20Familia!5e0!3m2!1sen!2sgr!4v1672762659683!5m2!1sen!2sgr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="location-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu posuere
+                ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci cursus erat, non
+                dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis, turpis leo bibendumarcu, id
+                tincidunt lacus sem a metus.
+
+                Nulla placerat tincidunt quam, ac bibendum quam vehicula a. Vestibulum velit risus,
+                commodo non sagittis ut, tempus vel nulla. Sed sit amet tincidunt leo, non tempor mi.
+                Nunc lacinia pellentesque purus sed aliquam. Nunc non nulla eu leo imperdiet scelerisque id sit amet
+                justo.
+                Nulla mattis ligula sed ipsum molestie, in sollicitudin urna tincidunt. Nam pharetra eget dui non
+                placerat. Duis sit amet nisi finibus, aliquet risus nec, maximus justo.
+            </p>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery" class="gallery-section">
+            <div class="title">
+                <h2 class="title">Gallery</h2>
+                <div class="top"><a href="#navbar">Top</a></div>
+            </div>
+            <div class="gallery-items-grid3">
+                <img src="images/omer-haktan-bulut-e2F2dYhraIQ-unsplash.jpg" alt="item1">
+                <img src="images/omer-haktan-bulut-W525htvQX2Y-unsplash.jpg" alt="item2">
+                <img src="images/ali-karimiboroujeni-GKjgirdlH_0-unsplash.jpg" alt="item3">
+            </div>
+            <div class="gallery-items-grid1">
+                <img src="images/taylor-simpson-_bMrTlb8wQU-unsplash.jpg" alt="item4">
+            </div>
+        </section>
+
+        <!-- Collection -->
+        <section id="collection">
+            <div class="title">
+                <h2 class="title">Collection</h2>
+                <div class="top"><a href="#navbar">Top</a></div>
+            </div>
+            <div class="collection-grid6">
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Colorful</h3>
+                    <img src="images/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg" alt="pic1">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+                </div>
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Pablo</h3>
+                    <img src="images/pablo-soriano-Hnp-cs9QVOc-unsplash.jpg" alt="pic2">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+                </div>
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Charbel</h3>
+                    <img src="images/charbel-aoun-4rnfKwSNpx0-unsplash.jpg" alt="pic3">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+
+                </div>
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Pazani</h3>
+                    <img src="images/ali-pazani-GwglcplmXDs-unsplash.jpg" alt="pic4">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+                </div>
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Omid</h3>
+                    <img src="images/omid-armin-PmB5Uo9dUk4-unsplash.jpg" alt="pic5">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+                </div>
+                <div class="collection-image">
+                    <h3 class="item-title">Sunglasses Jonathan</h3>
+                    <img src="images/jonathan-borba-reiwBhNJQS0-unsplash.jpg" alt="pic6">
+                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+                        posuere ipsum, vitae commodo ligula. Cras maximus, libero laoreet consequat viverra, magna orci
+                        cursus erat, non dapibus urna dolor vel orci. Cras mollis, dolor tincidunt auctor convallis,
+                        turpis leo bibendum arcu, id tincidunt lacus sem a metus.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- our team-->
+        <section id="our-team">
+            <div class="title">
+                <h2 class="title">Our Team</h2>
+                <div class="top"><a href="#navbar">Top</a></div>
+            </div>
+            <div class="team-images-grid6">
+                <img src="images/istockphoto-1046139280-1024x1024.jpg" alt="image">
+                <img src="images/istockphoto-1299466571-1024x1024.jpg" alt="image">
+                <img src="images/istockphoto-1299613080-1024x1024.jpg" alt="image">
+                <img src="images/istockphoto-1313344227-1024x1024.jpg" alt="image">
+                <img src="images/istockphoto-931291952-1024x1024.jpg" alt="image">
+                <img src="images/istockphoto-Ox6SW103KtM-unsplash.jpg" alt="image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="text-footer">
+            <p>
+                Copyright 2023 Sunglasses Store
+                <a href="#navbar"><button class="button-footer"><img src="images/up-arrow.png"
+                            alt="arrow-up"></button></a>
+            </p>
+            <p>C/ de Mallorca, 401, 08013 Barcelona, Spain</p>
+            <p><a href="tel:111222222">+ 34 111 22 22 22</a></p>
+            <p>We are open Monday to Friday from 9:00 to 19:00</p>
+            <p>During the weekends from 10:00 to 15:00</p>
+        </div>
+    </footer>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  
+</body>
+
 </html>
